@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>ようこそ</h1>
-<h1><c:out value="${name}"></c:out>さん</h1>
+<h1><c:out value="${name}"/>さん</h1>
 </body>
 </html>

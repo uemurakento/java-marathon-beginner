@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:out value="${num1}"></c:out>×<c:out value="${num2}"></c:out>=<c:out value="${result}"></c:out><br>
+<c:out value="${num1}"/>×<c:out value="${num2}"/>=<c:out value="${result}"/><br>
 <a href="${pageContext.request.contextPath}/calc/output2">次へ</a>
 </body>
 </html>

@@ -8,9 +8,9 @@
 </head>
 <body>
 <table>
-<tr><td>名前：<c:out value="${user.name}"></c:out><br></td></tr>
-<tr><td>年齢：<c:out value="${user.age}"></c:out><br></td></tr>
-<tr><td>住所：<c:out value="${user.address}"></c:out><br></td></tr>
+<tr><td>名前：<c:out value="${user.name}"/><br></td></tr>
+<tr><td>年齢：<c:out value="${user.age}"/><br></td></tr>
+<tr><td>住所：<c:out value="${user.address}"/><br></td></tr>
 </table>
 </body>
 </html>

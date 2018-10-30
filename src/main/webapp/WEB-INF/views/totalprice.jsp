@@ -10,8 +10,8 @@
 <body>
 <h1>合計金額</h1>
 <h2>■税抜き価格</h2>
-<fmt:formatNumber value="${sum}" pattern="###,###円"></fmt:formatNumber>
+<fmt:formatNumber value="${sum}" pattern="###,###円"/>
 <h2>■税込み価格</h2>
-<fmt:formatNumber value="${tax}" pattern="###,###円"></fmt:formatNumber>
+<fmt:formatNumber value="${tax}" pattern="###,###円"/>
 </body>
 </html>

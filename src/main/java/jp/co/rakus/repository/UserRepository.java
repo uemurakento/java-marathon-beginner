@@ -12,7 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import jp.co.rakus.domain.User;
 
 /**
- * Userのリポジトリ
+ * usersテーブルを操作するリポジトリ.
+ * 
  * @author kento.uemura
  *
  */
@@ -27,6 +28,12 @@ public class UserRepository {
 		return user;
 	};
 	
+	/**
+	 * ロード操作(一件検索)を行う.
+	 * 
+	 * @param id 指定する主キー
+	 * @return データベースから受け取った値を格納したuserオブジェクト
+	 */
 	public User load(Integer id) {
 		String sql = "SELECT id,name,age,address FROM "+TABLE_NAME+" WHERE id=:id;";
 		SqlParameterSource param = new MapSqlParameterSource().addValue("id", id);

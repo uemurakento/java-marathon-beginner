@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import jp.co.rakus.domain.Item;
 
 /**
- * ショッピングカートの商品の追加、削除の結果を出力するコントローラー
+ * ショッピングカートの商品の追加、削除の結果を出力するコントローラー.
  * 
  * @author kento.uemura
  *
@@ -30,7 +30,7 @@ public class ShoppingCartController {
 	/**
 	 * 初期画面、更新された画面を表示する.
 	 * 
-	 * @param model
+	 * @param model　モデル
 	 * @return 表示する画面
 	 */
 	@SuppressWarnings("unchecked")
@@ -67,8 +67,8 @@ public class ShoppingCartController {
 	public String inCart(int itemNum) {
 		List<Item> items = (List<Item>) application.getAttribute("items");
 		Item item = items.get(itemNum);
-		List<Item> list = (LinkedList<Item>) session.getAttribute("cartItems");
-		list.add(item);
+		List<Item> cartItems = (LinkedList<Item>) session.getAttribute("cartItems");
+		cartItems.add(item);
 		return "redirect:/shoppingCart/";
 	}
 
